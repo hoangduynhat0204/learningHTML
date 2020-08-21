@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body > * { background: white; }
+            body {
+                display: grid;
+                width: 100%;
+                height: 700px;
+                margin: 5px;
+                grid-template-columns: 20% 1fr;
+                grid-template-rows: 100px 50px 1fr 60px;
+                grid-gap: 5px;
+                grid-template-areas:
+                    "head head"
+                    "navi navi"
+                    "sec1 sec2"
+                    "foot foot";
+            }
+            header 	{ grid-area: head; }
+            nav 	{ grid-area: navi; background-color: green;}
+            #s1 	{ grid-area: sec1; background-color: gainsboro;}
+            #s2 	{ grid-area: sec2; }
+            footer 	{ grid-area: foot; background-color: greenyellow; text-align: center; color: white;
+            font-size: 120%;}
+            nav li {
+                display: inline;
+                padding: 15px 80px 15px 80px;
+                list-style-type: none;
+                border-left: 1px solid white;
+                
+            }
+            nav li a {
+                text-decoration: none;
+                color: white;
+                
+            }
+            nav li:hover {
+                background-color: greenyellow;
+            }
+            header img {
+                width: 100%;
+                height: 100px;
+            }
+            #s1 ul li a {
+                text-decoration: none;
+                padding:  5px;
+            }
+            #s1 ul li {
+                padding:  8px;
+                
+                border-bottom: 1px dotted black;
+            }
+            #s1 h3 {
+                background-color: greenyellow;
+                height: 50px;
+            }
+            #s2 div {
+                float: left;
+                width: 30%;
+                height: 350px;
+                border: 1px solid green;
+                margin: 5px;
+                text-align: center;
+            }
+            #s2 div img {
+                width: 100%;
+                height: 250px;
+            }
+            #s2 div:hover {
+                background-color: greenyellow;
+                font-size: 110%;
+            }
+            #s2 div p {
+                color: green;
+            }
+            #chitiet {
+                text-decoration: none;
+                border: 1px solid black;
+                background: gainsboro;
+                color: pink;
+                margin: 1px;
+                padding: 3px;
+            }
+            #dathang {
+                text-decoration: none;
+                border: 1px solid black;
+                background: pink;
+                color: white;
+                 margin: 1px;
+                 padding: 3px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <img src="Flowerswebsite/Images/banner1.jpg" alt=""/>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#">TRANG CHỦ</a></li>
+                <li><a href="#">GIỚI THIỆU</a></li>
+                <li><a href="#">TIN TỨC</a></li>
+                <li><a href="#">THANH TOÁN</a></li>
+                <li><a href="#">NHẬN XÉT</a></li>
+                <li><a href="lien-he.html">LIÊN HỆ</a></li>
+            </ul>
+        </nav>
+        <section id="s1">
+            <h3>HOA THEO THỂ LOẠI</h3>
+            <ul>
+                <li><a href="#">Hoa Phong Lan</a></li>
+                <li><a href="#">Hoa Cẩm Bình</a></li>
+                <li><a href="#">Hoa Văn Phòng</a></li>
+                <li><a href="#">Hoa Cưới</a></li>
+                <li><a href="#">Đặt hàng theo yêu cầu</a></li>
+            </ul>
+            <h3>QUÀ TẶNG</h3>
+            <ul>
+                <li><a href="#">Bánh Kem</a></li>
+                <li><a href="#">Gấu bông</a></li>
+                <li><a href="#">Túi Xách</a></li>
+                <li><a href="#">Bánh trung thu</a></li>
+                <li><a href="#">Cà vạt</a></li>
+                <li><a href="#">Sô cô la</a></li>
+                <li><a href="#">Đặt hàng theo yêu cầu</a></li>
+            </ul>
+        </section>
+        <section id="s2">
+            <div>
+                <img src="Flowerswebsite/Images/H11.jpg" alt=""/>
+                <p>TY047 - 920.000 VNĐ</p>
+                <a href="#" id="chitiet">Chi tiết</a> <a href="#" id="dathang">Đặt hàng</a>
+            </div>
+            <div>
+                <img src="Flowerswebsite/Images/h12.jpg" alt=""/>
+                <p>SNO27 - 963.200 VNĐ</p>
+                <a href="#" id="chitiet">Chi tiết</a> <a href="#" id="dathang">Đặt hàng</a>
+            </div>
+            <div>
+                <img src="Flowerswebsite/Images/h13.jpg" alt=""/>
+                <p>TY039 - 835.200 VNĐ</p>
+                <a href="#" id="chitiet">Chi tiết</a> <a href="#" id="dathang">Đặt hàng</a>
+            </div>
+            <div>
+                <img src="Flowerswebsite/Images/h21.jpg" alt=""/>
+                <p>HB040 - 787.200 VNĐ</p>
+                <a href="#" id="chitiet">Chi tiết</a> <a href="#" id="dathang">Đặt hàng</a>
+            </div>
+            <div>
+                <img src="Flowerswebsite/Images/h22.jpg" alt=""/>
+                <p>TL234 - 1.200.000 VNĐ</p>
+                <a href="#" id="chitiet">Chi tiết</a> <a href="#" id="dathang">Đặt hàng</a>
+            </div>
+            <div>
+                <img src="Flowerswebsite/Images/h23.jpg" alt=""/>
+                <p>TL233 - 947.200 VNĐ</p>
+                <a href="#" id="chitiet">Chi tiết</a> <a href="#" id="dathang">Đặt hàng</a>
+            </div>
+        </section>
+        <footer>
+            <p>Công ty cổ phần điện hoa Nha Trang <br>
+                Địa chỉ: 5A1 Đường Lý Tự Trọng - TP Nha Trang - Tỉnh Khánh Hòa </p>
+        </footer>
+    </body>
+</html>

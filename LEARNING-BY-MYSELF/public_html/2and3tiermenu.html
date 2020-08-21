@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            nav {
+                
+            }
+            .nav>li{
+                float: left;
+                margin-right: 15px;
+            }
+
+            .nav>li>a{
+                text-transform: uppercase;
+                color: red;
+            }
+
+            .nav li{
+                position: relative;
+                list-style:none;
+            }
+
+            .nav li a{
+                padding: 10px;
+                line-height: 20px;
+                display: inline-block;
+            }
+
+            .nav .sub-menu{
+                display: none;
+                position: absolute;
+                top: 0;
+                left: 100%;
+                width: 200px;
+                background-color: #eee;
+                padding: 5px 20px;
+            }
+
+            .nav li:hover>.sub-menu{
+                display: block;
+            }
+
+            .nav>li>.sub-menu{
+                top: 40px;
+                left: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <ul class="nav">
+                <li><a href="#">Menu số 1</a></li>
+                <li>
+                    <a href="#">Menu số 2</a>
+                    <ul class="sub-menu">
+                        <li><a href="#">Menu số 2.1</a></li>
+                        <li>
+                            <a href="#">Menu số 2.2</a>
+                            <ul class="sub-menu">
+                                <li><a href="#">Menu số 2.2.1</a></li>
+                                <li><a href="#">Menu số 2.2.2</a></li>
+                                <li><a href="#">Menu số 2.2.3</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Menu số 2.3</a></li>
+                        <li><a href="#">Menu số 2.4</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Menu số 3</a></li>
+                <li><a href="#">Menu số 4</a></li>
+                <li><a href="#">Menu số 5</a></li>
+            </ul>
+        </nav>
+    </body>
+</html>

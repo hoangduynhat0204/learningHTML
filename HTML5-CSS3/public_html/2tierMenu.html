@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>2-tier Navigation Menu</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                font-family: Verdana, Arial, Helvetica, sans-serif;
+                font-size: 87.5%;
+                width: 706px;
+                background-color: white;
+                margin: 15px auto;
+                padding: 20px;
+            }
+
+            h2 { 
+                font-size: 125%;
+                margin-bottom: .5em;
+                clear: both;
+            }
+            #nav_menu ul {
+                list-style: none;
+                position: relative;
+            }
+            #nav_menu ul li { float: left}
+            #nav_menu ul ul {
+                display: none;
+                position: absolute;
+                top: 100%;
+            }
+            #nav_menu ul ul li {
+                float: none;
+            }
+
+            #nav_menu ul li:hover > ul {
+                display: block;
+            }
+
+            #nav_menu > ul:after {
+                content: " ";
+                display: block;
+                clear: both;
+            }
+            #nav_menu ul {
+                margin: 0;
+                padding: 0;
+            }
+            #nav_menu ul li a {
+                text-align: center;
+                display: block;
+                width: 176px;
+                padding: 1em 0;
+                text-decoration: none;
+                background-color: blue;
+                color: white;
+                font-weight: bold;
+            }
+            #nav_menu ul li.lastitem a {
+                width: 178px;               /* So the menu fills the 706px width of the page */
+            }
+            #nav_menu ul li a.current {
+                color: yellow;
+            }
+            #nav_menu ul li a:hover, #nav_menu ul li a:focus {
+                background-color: gray;
+            }
+        </style>
+    </head>
+    <body>
+        <nav id="nav_menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Speaker</a>
+                    <ul>
+                        <li><a href="#">Jeffrey Toobin</a></li>
+                        <li><a href="#">Andrew Ross</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" class="current">Become a Member</a></li>
+                <li class="lastitem"><a href="#">About us</a>
+                    <ul>
+                        <li><a href="#">Jeffrey Toobin</a></li>
+                        <li><a href="#">Jeffrey Toobin</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </body>
+</html>

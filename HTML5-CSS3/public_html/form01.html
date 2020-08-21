@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Register New Member</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body {
+                width: 500px;
+                margin: 20px auto; }
+            label {
+                color: navy;
+                float: left;
+                width: 8em;
+                font-weight: bold;
+                text-align: right;}
+            input {
+                width: 15em;
+                margin-left: 1em;
+                margin-bottom: .5em;}
+            input:focus {
+                border: 2px solid navy; }
+            #button, #reset {
+                width: 7em;
+                background-color: silver;
+                box-shadow: 2px 2px 0 navy; }
+            #button {
+                margin-left: 9.5em;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>Register New Member</h3>
+        <form action="Register.php"
+              method="post" enctype="multipart/form-dât">
+            <label>User Name:</label>
+            <input name="id" type="text"/>
+
+            <label>Password:</label> 
+            <input name="password" type="password" />
+
+            <label>Full Name</label>
+            <input name="fullname" type="text"  />
+
+            <label>Photo</label> 
+            <input name="photo" type="file"/>
+            <br/>
+
+            <label>Sex</label>
+            <input type="radio" name="sex" value="male">Male
+            <input type="radio" name="sex" value="female">Female
+
+            <label>Favorites</label>
+            <input type="checkbox" name="favorite1" value="music">Music
+            <input type="checkbox" name="favorite2" value="game">Game
+            <input type="checkbox" name="favorite3" value="soccer">Soccer
+           
+            <label>Summary<label> 
+                    <textarea rows="6" cols="30" id="summary" placeholder="Please write something about you here"></textarea>
+                    <hr/>
+                    <button type="submit" id="button">Register</button>
+                    <button type="reset" id="reset">Reset</button>
+                    </form>
+                    </body>
+                    </html>

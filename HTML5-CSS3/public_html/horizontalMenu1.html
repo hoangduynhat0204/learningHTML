@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Vertical Menus</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            #nav_list ul {
+                list-style-type: none;
+                margin-left: 1.25em;
+                margin-bottom: 1.5em;
+                position: relative;
+
+            }
+            #nav_list ul li {
+                display: inline;
+                width: 200px;
+                margin-bottom: .5em;
+                border-right: 2px solid white;
+                background-color: blue;
+                float: left;
+            }
+            #nav_list ul ul {
+                display: none;
+                position: absolute;
+                top: 100%;
+            }
+            #nav_list ul ul li {float: none;}
+            #nav_list ul li a {
+                display: block;
+                padding:  .5em 0 .5em 1.5em;
+                text-decoration: none;
+                font-weight: bold;
+                color: white;
+            }
+            #nav_list ul li:hover > ul {
+                display: block;
+            }
+            #nav_list > ul:after {
+                content: "";
+                display: block;
+                top: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <nav id="nav_list">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Speaker</a>
+                    <ul>
+                        <li><a href="#">Jeffrey Toobin</a></li>
+                        <li><a href="#">Andrew Ross</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" class="current">Become a Member</a></li>
+                <li class="lastitem"><a href="#">About us</a>
+                    <ul>
+                        <li><a href="#">Jeffrey Toobin</a></li>
+                        <li><a href="#">Jeffrey Toobin</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </body>
+</html>

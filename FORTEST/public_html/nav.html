@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            //style1
+            #nav_menu ul {
+                list-style: none;
+            }
+            #nav_menu ul li {
+                float: left;
+            }
+            #nav_menu ul li a {
+                text-align: center;
+                display: block;
+                width: 175px;
+                padding: 1em 0;      /* padding above and below li elements */
+                text-decoration: none;
+                background-color: blue;
+                color: white;
+                font-weight: bold;
+                border-right: 2px solid white;
+            }
+            #nav_menu ul li a.lastitem {
+                border-right: none;
+            }	
+            #nav_menu ul li a.current { color: yellow; }
+
+            //style 2
+            .topnav {
+                overflow: hidden;
+                background-color: #333;
+            }
+
+            .topnav a {
+                float: left;
+                color: #f22;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+            }
+
+            .topnav a:hover {
+                background-color: #ddd;
+                color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <nav id="nav_menu">
+            <ul>
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="tickets.html" >Get Tickets</a></li> 
+                <li><a href="members.html" class="current" >Become a Member</a></li> 
+                <li><a href="about_us.html" class="lastitem" >About Us</a></li>
+            </ul>
+        </nav>
+        <div class="topnav">
+            <a class="active" href="#home">Trang chủ</a>
+            <a href="#news">Tin tức</a>
+            <a href="#contact">Liên hệ</a>
+            <a href="#about">Về chúng tôi</a>
+        </div>
+    </body>
+</html>

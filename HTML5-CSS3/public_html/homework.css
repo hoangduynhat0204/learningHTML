@@ -1,0 +1,6 @@
+html {
+    background-image: -webkit-linear-gradient (
+        to bottom, white 0%, #facd8a 100%);
+    background-image: -moz-linear-gradient ( to bottom, white 0%, #facd8a 100%);
+    
+}

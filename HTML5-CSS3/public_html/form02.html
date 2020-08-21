@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <title>Formatting controls</title>
+    <style type="text/css">
+		body {
+			font: 87.5% Arial, Helvetica, sans-serif;
+			width: 500px;
+		    margin: 20px auto; }
+		label {
+			color: navy;
+			float: left;
+			width: 8em;
+			font-weight: bold;
+			text-align: right;}
+		input {
+			width: 15em;
+			margin-left: 1em;
+			margin-bottom: .5em;}
+		input:focus {
+			border: 2px solid navy; }
+		#button, #reset {
+			width: 7em;
+			background-color: silver;
+			box-shadow: 2px 2px 0 navy; }
+		#button {
+			margin-left: 9.5em;
+		}
+	</style>
+</head>
+
+<body>
+<form name="myform" action="register.php" method="post">
+    <label for="id">User Name:</label>
+    <input type="text" name="firstname" id="firstname" autofocus><br>
+    <label for="password">Password:</label>
+    <input type="password" name="lastname" id="lastname"><br>
+    <label for="fullname">Fullname:</label>
+    <input type="text" name="address" id="address"><br>
+    
+    <input type="submit" name="register" id="button" value="Register">
+    <input type="reset" name="reset" id="reset"> 
+</form>
+</body>
+</html>

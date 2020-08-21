@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>iViettech - Trung tâm đào tạo Lập trình viên chuyên nghiệp | chuyên đào tạo các khóa  lập trình Java, .Net, Android, iOS, PHP, Tester</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="images/favicon.ico" />
+        <style>
+            body > * { background: silver; }
+            body {
+                display: grid;
+                width: 100%;
+                height: 700px;
+                margin: 0;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                grid-template-rows: 80px 1fr 60px;
+                grid-gap: 0px;
+                grid-template-areas:
+                    "head navi navi navi"                   
+                    "sec sec sec asi"
+                    "foot foot foot foot";
+            }
+            header 	{ grid-area: head; margin-top: 5px;}
+            nav 	{ grid-area: navi; margin-top: 25px; width: 100%}
+            section     { grid-area: sec; background-color: white; margin: 100px; }
+            aside 	{ grid-area: asi; background-color: white; margin: 60px;}
+            footer 	{ grid-area: foot; }
+
+            header, nav {
+                background-color: white;
+                border-bottom: 5px solid darkred;
+
+            }
+            header img {
+                float: right;
+            }
+            nav ul {
+                float: left;
+            }
+            section {
+                background-color: #CA3438;
+            }
+            footer {
+                background-color: #A9A9A9;
+                text-align: center;
+                padding: 10px;
+                color: white;
+            }
+            #nav_menu ul {
+                list-style: none;
+                position: relative;
+            }
+            #nav_menu ul li { 
+                float: left;
+                border-bottom: 1px solid darkred;
+            }
+            #nav_menu ul ul {
+                display: none;
+                position: absolute;
+                top: 100%;
+            }
+            #nav_menu ul ul li {
+                float: none;
+            }
+
+            #nav_menu ul li:hover > ul {
+                display: block;
+            }
+
+            #nav_menu > ul:after {
+                content: " ";
+                display: block;
+                clear: both;
+            }
+            #nav_menu ul {
+                margin: 0;
+                padding: 0;
+            }
+            #nav_menu ul li a {
+                text-align: center;
+                display: block;
+                width: 145px;
+                padding: 1em 0;
+                text-decoration: none;
+                background-color: white;
+                color: black;
+            }
+            #nav_menu ul li a:hover, #nav_menu ul li a:focus {
+                color: darkred;
+            }
+            section div {
+                background-color: white;
+                border: 1px solid black;
+                width: 700px;
+                padding: 20px;
+                height: 500px;
+            }
+            section label {
+                margin-left: 10px;
+            }
+            section input, select, textarea {margin-left: 150px;}
+            section { background-color: white; }
+            input {
+                width: 40%;
+                margin: 15px;
+                box-shadow: 1px 1px;
+            }
+            select,textarea {
+                width: 80%;
+                margin: 15px;
+                box-shadow: 1px 1px;
+            }
+            button {
+                float: right;
+                width: 100px;
+                height: 50px;
+                background-color: #C30001;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <img src="../Images/ivtlogo.png" alt=""/>
+        </header>
+        <nav id="nav_menu">
+            <ul>
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Các khóa học lập trình</a>
+                    <ul>
+                        <li><a href="#">Chuyên nghiệp</a></li>
+                        <li><a href="#">Cấp tốc</a></li>
+                        <li><a href="#">Các khóa khác</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Đăng ký học</a></li>
+                <li><a href="#">Việc làm</a></li>
+                <li><a href="#">iViettech</a></li>
+                <li><a href="#">Trang vàng HV</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </nav>
+        <section>
+            <h1>Đăng ký khóa học</h1>
+            <hr>
+            <div>
+                <form>
+
+                    <label>Họ tên: *</label><br/>
+                    <input name="fullname" type="text" required/><br/>
+
+                    <label>Email: *</label><br/>
+                    <input name="email" type="email" required/><br/>
+
+                    <label>Điện thoại: *</label><br/>
+                    <input name="phone" type="tel" required/><br/>
+
+                    <label required>Chọn khóa học: *</label><br/>
+                    <select>
+                        <option disabled>Chọn khóa học</option>
+                        <option>Lập trình Android</option>
+                        <option>Lập trình iOS</option>
+                        <option>Kiểm thử chuyên nghiệp</option>
+                        <option>Java</option>
+                    </select><br/>
+
+                    <label>Lời nhắn:</label><br>
+                    <textarea  rows="4" cols="50"></textarea><br/>
+                    <hr/>
+                    <button value="Đăng Ký">ĐĂNG KÝ</button>
+            </div>
+        </form> 
+    </section>
+    <aside>
+        <img src="../Images/Screenshot_1.png" alt=""/>
+    </aside>
+    <footer>
+        Địa chỉ : 92 Quang Trung, Q. Hải Châu, TP. Đà Nẵng - Điện thoại : 02363 888 279
+        <br>
+        Email : contact@iviettech.vn
+    </footer>
+</body>
+</html>

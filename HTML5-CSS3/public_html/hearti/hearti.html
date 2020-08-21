@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Hearti.io - Your Digital-First insurance partner</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body > * { 
+                font-family: arial;
+            }
+            body {
+                display: grid;
+                width: 100%;
+                height: 1000px;
+                margin: auto;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 110px 1fr 160px 50px;
+                grid-gap: 0px;
+                grid-template-areas:
+                    "head navi navi"
+                    "sec1 sec1 sec1"
+                    "sec2 sec2 sec2"
+                    "foot foot foot";
+            }
+            header 	{ 
+                grid-area: head; 
+                text-align: center; 
+                background-color: #004D7F; 
+
+            }
+            nav 	{ 
+                grid-area: navi; 
+                background-color: #004D7F; 
+            }
+            header, nav {
+                position: -webkit-sticky;
+                position: sticky;
+                top: 0;
+            }
+            #s1 	{ 
+                grid-area: sec1; 
+                background-image: url("https://hearti.io/wp-content/uploads/2019/03/hearti-heading.jpg");
+                color: white;
+                font-size: 130%;
+            }
+            #s2 	{ 
+                grid-area: sec2; 
+            }
+            footer 	{ 
+                grid-area: foot; 
+                background-color: white; 
+                margin: 15px; 
+                margin-left: 150px; 
+                color: #0080C9;
+            }
+            #nav_menu ul {
+                float: right;
+                margin-right: 200px;
+                list-style: none;
+            }
+            #nav_menu ul li {
+                float: left;
+                margin-top: 20px;
+            }
+            #nav_menu ul li a {
+                text-align: center;
+                display: block;
+                width: 100px;
+                padding: 1em 0;      
+                text-decoration: none;
+                color: white;
+            }
+            section img {
+                width: 100%;
+            }
+            section div {
+                width: 420px;
+                float: left;
+                margin: 200px;
+            }
+            section a {
+                text-decoration: none;
+                border: 1px solid #004D7F;
+                background-color: #004D7F;
+                color: white;
+                padding: 10px;
+                border-radius: 3px;
+            }
+            section a:hover {
+                background-color: orange;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <img src="hearti-logo-white.png" alt="" height="100px"/>
+        </header>
+        <nav id="nav_menu">
+            <ul>
+                <li><a href="#" >Benefit.X</a></li>
+                <li><a href="#" >Surety.AI</a></li> 
+                <li><a href="#" >Technologies</a></li> 
+                <li><a href="#" >About</a></li>
+                <li><a href="#" >Contact</a></li>
+            </ul>
+        </nav>
+        <section id="s1">
+            <div>
+                <h1>Your Digital-First Venture Partner</h1>
+                <h2>Hearti is a FinTech venture company that provides cutting-edge technological platforms to Insurers and Banks.</h2>
+                <p><a href="#">EXPLORE SURETY.AI FUNCTIONS</a></p>
+            </div>
+        </section>
+        <section id="s2">Section 2</section>
+        <footer>Hearti.io Copyright ©2019 Hearti Lab Pte Ltd. All Rights Reserved.</footer>
+    </body>
+</html>

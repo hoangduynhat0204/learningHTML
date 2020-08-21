@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Tree Valley - Modern living with nature</title>
+        <style>
+            body > * { background: silver; }
+            body {
+                display: grid;
+                width: 100%;
+                height: 800px;
+                margin: 0px;
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+                grid-template-rows: 105px 1fr 100px;
+                grid-gap: 0px;
+                grid-template-areas:
+                    "head head head navi navi navi navi navi"
+                    "sec1 sec1 sec1 sec1 sec2 sec2 sec2 sec2"
+                    "foot foot foot foot foot foot foot foot";
+            }   
+            header 	{ grid-area: head; background-color: white; }
+            nav 	{ grid-area: navi; background-color: white; vertical-align: central;}
+            #s1 	{ grid-area: sec1; background-color: #E4EDEE;}
+            #s2 	{ grid-area: sec2; background-color: #E4EDEE;}
+            footer 	{ grid-area: foot; background-color: #75A200;}
+            header img {
+                margin: 10px;
+                margin-left: 25px;
+            }
+            nav ul {
+                padding-top: 30px;
+            }
+            nav li {
+                display: inline;
+                padding: 70px 40px 70px 40px;
+                list-style-type: none;
+                
+            }
+            nav li a {
+                text-decoration: none;
+                padding-top: 100px;
+                
+            }
+            nav li:hover {
+                background-color: greenyellow;
+            }
+            #s1 p , #s1 h3{
+                text-align: left;
+                margin: 30px;
+            }
+            #s1 img {
+                margin: 35px;
+            }
+            #s2 p,#2 h3 {
+                text-align: right;
+                margin: 30px;
+                float: right;
+            }
+            #s2 img {
+                margin: 30px;
+            }
+            footer p {
+                margin: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <img src="Images/logo - Copy.png" alt=""/>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Subdivisions</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="Register.html">Register</a></li>
+            </ul>
+        </nav>
+        <section id="s1">
+            <img src="Images/house.png" alt=""/>
+            <h3>Template 2</h3>
+            <p>This website template has been designed by <br>  <u>Free Website Templates</u> for you, for free
+                <br>
+                <br>
+                You can replace all this text with your own text. You can remove<br>
+                any link to our website from this website template, you're free to<br>
+            use this website template without linking back to us.
+            <br>
+            <br>
+            If you're having problems editing this website template, then don't<br>
+            hesitate to ask for help on the Forums.</p>
+        </section>
+        <section id="s2">
+            <img src="Images/kayamura.png" alt=""/>
+            <h3>Template 1</h3>
+            <p>
+                This website template has been designed by<br>
+                Free Website Templates for you, for free. You can replace all this<br>
+                text with your own text. You can remove any link to our website<br>
+                from this website template, you're free to use this website template<br>
+                without linking back to us, if you're having problems editing this<br>
+                website template, then don't hesitale to ask for help on the<br>
+                <u>Forums.</u>
+            </p>
+            <img src="Images/nature-place-photo.png" alt=""/>
+        </section>
+        <footer>
+            <p>2023 Tre Valley All Rights Reserved</p>
+        </footer>
+    </body>
+</html>

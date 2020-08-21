@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Register - Tree Valley - Modern living with nature</title>
+        <style>
+            body > * { background: silver; }
+            body {
+                display: grid;
+                width: 100%;
+                height: 800px;
+                margin: 0px;
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+                grid-template-rows: 105px 1fr 100px;
+                grid-gap: 0px;
+                grid-template-areas:
+                    "head head head navi navi navi navi navi"
+                    "sec1 sec1 sec1 sec1 sec2 sec2 sec2 sec2"
+                    "foot foot foot foot foot foot foot foot";
+            } 
+            header 	{ grid-area: head; background-color: white; }
+            nav 	{ grid-area: navi; background-color: white; vertical-align: central;}
+            #s1 	{ grid-area: sec1; background-color: #E4EDEE; }
+            #s2 	{ grid-area: sec2; background-color: #E4EDEE;}
+            footer 	{ grid-area: foot; background-color: #75A200;}
+            header img {
+                margin: 10px;
+                margin-left: 25px;
+            }
+             nav ul {
+                padding-top: 30px;
+            }
+            nav li {
+                display: inline;
+                padding: 70px 50px 70px 50px;
+                list-style-type: none;
+            }
+            nav li a {
+                text-decoration: none;
+                padding-top: 100px;
+            }
+            nav li:hover {
+                background-color: greenyellow;
+            }
+            nav li:a {
+                background-color: greenyellow;
+            }
+            label {
+                float: left;
+                width: 5em;
+                text-align: left;}
+            input {
+                margin-left: 7em;
+                margin-bottom: .5em;}
+            #s1 div {
+                margin-left: 150px;
+            }
+            #button {
+                margin-left: 1em; }
+            footer p {
+                margin: 30px;
+            }
+            #nofloat {
+                float: left;
+            }
+            #radio {
+                margin-left: 90px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <img src="Images/logo - Copy.png" alt=""/>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Subdivisions</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="Register.html">Register</a></li>
+            </ul>
+        </nav>
+        <section id="s1">
+            <h2>Register</h2>
+            <br>
+            <form>
+                <div>
+                    <label>Full name</label>
+                    <input name="name" type="text" required placeholder="Enter your full name"/><br>
+                </div><br>
+                <div>
+                    <label>Gender</label>
+                    <input id="radio" name="gender" type="radio" value="Male"/>Male    
+                    <input id="radio" name="gender" type="radio"/> Female<br>
+                </div><br>
+                <div>
+                    <label>Email</label>
+                    <input name="email" type="email" placeholder="Enter your email"/><br>
+                </div><br>
+                <div>
+                    <label>User name</label>
+                    <input name="user" type="text"  placeholder="Enter user name"/><br>
+                </div><br>
+                <div>
+                    <label>Password</label>
+                    <input name="password" type="password" placeholder="Enter your password"/><br>
+                </div><br>
+                <div>
+                    <input id="button" type="submit" value="Submit" onclick="myFunction()"/>
+                    <input type="reset" value="Cancel"/><br>
+                </div><br>
+            </form>
+            <script>
+                        function myFunction() {
+                            alert("Fill your Name and Email");
+                        }
+            </script>
+        </section>
+        <section id="s2">          
+        </section>
+        <footer>
+            <p>2023 Tre Valley All Rights Reserved</p>
+        </footer>
+    </body>
+</html>

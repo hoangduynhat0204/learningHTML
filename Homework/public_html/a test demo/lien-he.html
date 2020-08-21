@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body > * { background: white; }
+            body {
+                display: grid;
+                width: 100%;
+                height: 700px;
+                margin: 5px;
+                grid-template-columns: 20% 1fr;
+                grid-template-rows: 100px 50px 1fr 60px;
+                grid-gap: 5px;
+                grid-template-areas:
+                    "head head"
+                    "navi navi"
+                    "sec1 sec2"
+                    "foot foot";
+            }
+            header 	{ grid-area: head; }
+            nav 	{ grid-area: navi; background-color: green;}
+            #s1 	{ grid-area: sec1; background-color: gainsboro;}
+            #s2 	{ grid-area: sec2; }
+            footer 	{ grid-area: foot; background-color: greenyellow; text-align: center; color: white;
+                      font-size: 120%;}
+            nav li {
+                display: inline;
+                padding: 15px 80px 15px 80px;
+                list-style-type: none;
+                border-left: 1px solid white;
+
+            }
+            nav li a {
+                text-decoration: none;
+                color: white;
+
+            }
+            nav li:hover {
+                background-color: greenyellow;
+            }
+            header img {
+                width: 100%;
+                height: 100px;
+            }
+            #s1 ul li a {
+                text-decoration: none;
+                padding:  5px;
+            }
+            #s1 ul li {
+                padding:  8px;
+                background-color: gainsboro;
+                border-bottom: 1px dotted black;
+            }
+            #s1 h3 {
+                background-color: greenyellow;
+            }
+            #s2 form div {
+                width: 40%;
+                float: left;
+                margin: 30px;
+                margin-left: 50px;
+            }
+            #s2 form div input, textarea {
+                height: 30px;
+                width: 250px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <img src="Flowerswebsite/Images/banner1.jpg" alt=""/>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">TRANG CHỦ</a></li>
+                <li><a href="#">GIỚI THIỆU</a></li>
+                <li><a href="#">TIN TỨC</a></li>
+                <li><a href="#">THANH TOÁN</a></li>
+                <li><a href="#">NHẬN XÉT</a></li>
+                <li><a href="lien-he.html">LIÊN HỆ</a></li>
+            </ul>
+        </nav>
+        <section id="s1">
+            <h3>HOA THEO THỂ LOẠI</h3>
+            <ul>
+                <li><a href="#">Hoa Phong Lan</a></li>
+                <li><a href="#">Hoa Cẩm Bình</a></li>
+                <li><a href="#">Hoa Văn Phòng</a></li>
+                <li><a href="#">Hoa Cưới</a></li>
+                <li><a href="#">Đặt hàng theo yêu cầu</a></li>
+            </ul>
+            <h3>QUÀ TẶNG</h3>
+            <ul>
+                <li><a href="#">Bánh Kem</a></li>
+                <li><a href="#">Gấu bông</a></li>
+                <li><a href="#">Túi Xách</a></li>
+                <li><a href="#">Bánh trung thu</a></li>
+                <li><a href="#">Cà vạt</a></li>
+                <li><a href="#">Sô cô la</a></li>
+                <li><a href="#">Đặt hàng theo yêu cầu</a></li>
+            </ul>
+        </section>
+        <section id="s2">
+            <hr>
+            <form>
+                <div>
+                    <label>Name:*</label><br>
+                    <input name="name" type="text"  required/>
+                </div>
+                <div>
+                    <label>Email:*</label><br>
+                    <input name="email" type="email"  required/>
+                </div>
+                <div>
+                    <label>Phone Number:</label><br>
+                    <input name="phone" type="tel"/>
+                </div>
+                <div>
+                    <label>Your website:</label><br>
+                    <input name="website" type="text"/>
+                </div>
+                <div>
+                    <label>Your messager:*</label><br>
+                    <textarea required></textarea>
+                </div>
+                <br>
+                <div>
+                    <input type="button" value="Transmit" />
+                </div>
+            </form>
+        </section>
+        <footer>
+            <p>Công ty cổ phần điện hoa Nha Trang <br>
+                Địa chỉ: 5A1 Đường Lý Tự Trọng - TP Nha Trang - Tỉnh Khánh Hòa </p>
+        </footer>
+    </body>
+</html>

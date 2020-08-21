@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Đăng ký thành viên</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body {
+                width: 400px;
+            }
+            label {
+                margin-left: 20px;
+            }
+            input, select {
+                float: right;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Thêm thành viên mới</h2>
+        
+        <label>Tài khoản</label>
+        <input name="id" type="text"/><br>
+        
+        <label>Email</label>
+        <input name="email" type="text"/><br>
+        
+        <label>Mật khẩu</label>
+        <input name="password" type="password"/><br>
+        
+        <label>Nhập lại mật khẩu</label>
+        <input name="password" type="password"/><br>
+        
+        <label>Câu hỏi bảo mật</label>
+        <input disabled placeholder="Địa chỉ nhà bạn ở đâu?"/><br/>
+        
+        <label>Câu trả lời</label>
+        <input id="answer" type="text"/><br/>
+        
+        <label>Họ và tên</label>
+        <input name="fullname" type="text"/><br/>
+        
+        <label>Giới tính</label>
+        <select>
+            <option>Male</option>
+            <option>Female</option>
+        </select><br/>
+        
+        <label>Hình đại diện</label>
+        <input name="photo" type="file"/><br>
+        
+        <label>Ngày tháng năm sinh</label>
+        <input name="birthday" type="date"/><br>
+        
+        <label>Website</label>
+        <input name="website" type="url"/><br>
+        
+        <label>Địa chỉ</label>
+        <input name="address" type="text"/><br/>
+        
+        <label>Tài khoản yahoo</label>
+        <input name="account" type="email"/><br/>
+        
+        <label>Điện thoại</label>
+        <input name="telephone" type="tel"/><br/>
+        
+        <label>Fax</label>
+        <input name="fax" type="text"/><br/>
+        
+        <label>Di động</label>
+        <input name="cellphone" type="tel"/><br/>
+        
+        <label>Hiển thị Email</label>
+        <input name="showemail" type="checkbox"/><br/>
+        
+        <label>Chữ ký</label>
+        <textarea rows="5" cols="30"></textarea><br/>
+        
+        <button type="submit" id="button">Thêm thành viên</button>
+    </body>
+</html>

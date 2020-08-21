@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Facebook</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="https://static.xx.fbcdn.net/rsrc.php/yo/r/iRmz9lCMBD2.ico?_nc_eui2=AeFCzsvDBtx_1J1hL04CJ5-WweG4eifFwPOs0LsfxgjoTD5MhFoblEEsH6NY_ov-qVObb34ip3NTTE9_jZBlL4UfC-Ckxdq5fBPGcz4LsViR8A" />
+        <style>
+            body {
+                display: grid;
+                width: 100%;
+                height: 700px;
+                margin: 0px;
+                grid-template-columns: 60% 40%;
+                grid-template-rows: 100px 1fr 60px;
+                grid-gap: 0px;
+                grid-template-areas:
+                    "head sec1"
+                    "sec2 sec3"
+                    "foot foot";
+            }
+           
+        </style>
+    </head>
+    <body>
+        <header>
+            <img src="Screenshot_8.png" alt=""/>
+        </header>
+        <section id="s1">
+            <div>
+                <label>Email or Phone</label><br/>
+                <input name="emailorphone" type="text"/><br/>
+                <input type="checkbox"/>Keep me logged in
+            </div>
+            <div>
+                <label>Password</label><br/>
+                <input name="password" type="password"/><br/>
+                <a id="forget" href="#">Forgot your password?</a>
+            </div>
+            <div>
+                <input id="login" name="đăng nhập" type="button" value="Log In"/>
+            </div>
+        </section>
+        <section id="s2">
+            <h1>Connect with friends and the world around you on Facebook.</h1>
+            <h3><strong>See photos and updates</strong> from friends in News Feed</h3>
+            <h3><strong>Share what's new</strong> in your life on your Timeline</h3>
+            <h3><strong>Find more</strong> of what you're looking for with Graph Search</h3>
+        </section>
+        <section id="s3">
+            <h1>Sign Up</h1>
+            <p>It's free and always will be.</p>
+            <input name="firstname" type="text" placeholder="First name"/>
+            <input name="lastname" type="text" placeholder="Last name"/> <br/>
+            <input name="emailorphone" type="text" placeholder="Email or mobile number"/><br/>
+            <input name="emailorphone" type="text" placeholder="Re-enter email or mobile number"/><br/>
+            <input name="password" type="password" placeholder="New password"/><br/>
+            <label>Birthday</label><br/>
+            <select>
+                <option value="Month">Month</option>
+                <option value="jan">Jan</option>
+                <option value="feb">Feb</option>
+                <option value="mar">Mar</option>
+                <option value="apr">Apr</option>
+                <option value="may">May</option>
+                <option value="jun">Jun</option>
+                <option value="jul">Jul</option>
+                <option value="agu">Agu</option>
+                <option value="sep">Sep</option>
+                <option value="oct">Oct</option>
+                <option value="nov">Nov</option>
+                <option value="dev">Dev</option>
+            </select>
+            <select>
+                <option value="day">Day</option>
+                <option value="01">01</option>
+                <option value="02">02</option>
+                <option value="03">03</option>
+                <option value="04">04</option>
+                <option value="05">05</option>
+                <option value="06">06</option>
+                <option value="07">07</option>
+                <option value="08">08</option>
+            </select>
+            <select>
+                <option value="year">Year</option>
+            </select>
+            <a href="#">Why do I need to provide my birthday?</a><br/>
+            <form>
+                <input type="radio" name="sex"/>Male
+                <input type="radio" name="sex"/>Female
+            </form>
+            <button><strong>Sign Up</strong></button>
+            <hr>
+            <p><a href="#">Create a Page</a> for a celebrity, band or business</p>
+        </section>
+        <footer></footer>
+    </body>
+</html>

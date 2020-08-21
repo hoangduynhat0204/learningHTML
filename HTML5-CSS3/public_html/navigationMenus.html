@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Vertical Menus</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            #nav_list ul {
+                list-style-type: none;
+                margin-left: 1.25em;
+                margin-bottom: 1.5em;
+            }
+            #nav_list ul li {
+                display: inline;
+                width: 200px;
+                margin-bottom: .5em;
+                border-right: 2px solid blue;
+                padding-right: 20px;
+                
+                
+            }
+            #nav_list ul li a {
+                padding:  .5em 0 .5em 1.5em;
+                text-decoration: none;
+                font-weight: bold;
+                color: blue;
+            }
+            #nav_list ul li.last {
+                border: none;
+            }
+        </style>
+    </head>
+    <body>
+        <nav id="nav_list">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Get Tickets</a></li>
+                <li><a href="#">Become a Member</a></li>
+                <li class="last"><a href="#">About Us</a></li>
+            </ul>
+        </nav>
+    </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>
+            Đăng ký khóa học - Hội thảo - iViettech - iViettech
+        </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="https://iviettech.vn/wp-content/themes/viettech/img/front/favicon.ico" type="image/x-icon" />
+        <style>
+            aside div {
+                border: 1px solid black;
+                width: fit-content;
+                padding: 20px;
+            }
+            aside label {
+                margin-left: 10px;
+            }
+            aside input, select, textarea {margin-left: 150px;}
+        </style>
+    </head>
+    <body>
+        <div>
+            <h1>Đăng ký khóa học</h1>
+            
+            <label>Họ tên: *</label><br/>
+            <input name="fullname" type="text" required/><br/>
+            
+            <label>Email: *</label><br/>
+            <input name="email" type="email"/><br/>
+            
+            <label>Điện thoại: *</label><br/>
+            <input name="phone" type="tel"/><br/>
+            
+            <label>Chọn khóa học: *</label><br/>
+            <select>
+                <option>Chọn khóa học</option>
+                <option>Lập trình Android</option>
+                <option>Lập trình iOS</option>
+                <option>Kiểm thử chuyên nghiệp</option>
+                <option>Java</option>
+            </select><br/>
+            
+            <label>Lời nhắn:</label><br>
+            <textarea  rows="4" cols="50"></textarea><br/>
+            <hr/>
+            <input name="submit" type="submit"/>
+        </div>
+    </body>
+</html>

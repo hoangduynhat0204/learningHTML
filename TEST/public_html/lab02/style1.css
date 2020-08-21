@@ -1,0 +1,193 @@
+body{
+	padding: 0;
+	margin: 0;
+}
+/*------------------------Container----------------------*/
+.container{
+	max-width: 1000px;
+	margin: 0 auto;
+	position: relative;
+	border: 1px solid orangered;
+	box-shadow: 0 0 5px orangered;
+}
+.main{
+	width: 1000px;
+	height: 600px;
+	margin-bottom: 2px;
+	border-bottom: 2px double orangered;
+}
+
+/*------------------------Header----------------------*/
+.container header{
+	max-height: 0;
+	background: url('Images/sv.jpg');
+	background-size: 1000px;
+	background-position: 0px -110px;
+	padding-bottom: 25%;
+	position: relative;
+        background-color:  #FACD8A;
+}
+
+/*------------------------Đăng nhập----------------------*/
+.container header .top-menu{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	background-color: orangered;
+	line-height: 30px;
+	padding: 0 10px 0 30px;
+	box-shadow: 0 0 20px white;
+	border-bottom-left-radius: 30px; 
+}
+.container header .top-menu a{
+	padding-left: 10px;
+	text-decoration:none;
+	color: white;
+	font-variant: small-caps;
+}
+.container header .top-menu a:first-child{
+	padding-left: 0;
+}
+.container header .top-menu a:hover{
+	color: yellow;
+}
+
+/*------------------------Giới thiệu info----------------------*/
+.container header .company-info{
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+	font-variant: small-caps;
+	color: white;
+	text-shadow: 0 0 20px orangered;
+}
+.container header .company-info h1{
+	padding: 0px;
+	margin: 0px;
+	font-family: Impact;
+	font-size: 45px;
+}
+.container header .company-info strong{
+	color: orangered;
+	border-top: 1px dotted orangered;
+	font-size: large;
+	letter-spacing: 3px;
+}
+
+
+/*------------------------Nav----------------------*/
+.container nav{
+	font-variant: small-caps;
+	color: white;
+	position: relative;
+	font-weight: bolder;
+}
+nav .menu>ul{
+	margin: 0px;
+	padding: 0px;
+	box-shadow: 0 0 5px orangered;
+	list-style: none;
+	background-color: orangered;
+	height: 40px;
+}
+nav .menu>ul>li{
+	float: left;
+	position: relative;
+}
+nav .menu>ul>li:first-child{
+	padding-left: 10px;
+}
+nav .menu>ul>li:hover>.sub-menu{
+	display: block;
+}
+nav .menu>ul>li>a{
+	display: block;
+	line-height: 40px;
+	text-decoration: none;
+	font-variant: small-caps;
+	padding: 0 25px;
+	color: white;
+	transition: all 1s;
+	-moz-transition: all 1s;
+	-webkit-transition: all 1s;
+
+}
+nav .menu>ul>li>a:hover{
+	color: red;
+	background-color: orange;
+}
+
+/*------------------------Sub menu----------------------*/
+.sub-menu{
+	margin: 0px;
+	padding: 0px;
+	border-radius: 5px;
+	box-shadow: 0 0 5px orangered;
+	width: 180px;
+	list-style: none;
+	position: absolute;
+	display: none;
+	z-index: 1;
+	background: white;
+}
+
+.sub-menu>li>a{
+	display: block;
+	line-height: 30px;
+	border-bottom: 1px dotted orange;
+	text-decoration: none;
+	font-variant: small-caps;
+	padding-left: 35px;
+	background: url('Images/icon-menu.png') no-repeat 5px center;
+	background-size: 20px;
+	color: orangered;
+	transition: all 1s;
+	-moz-transition: all 1s;
+	-webkit-transition: all 1s;
+}
+.sub-menu>li>a:hover{
+	color: red;
+	background: orangered url('Images/icon-menu.png') no-repeat 5px center;
+	background-size: 25px;
+}
+
+/*------------------------Phần Ngôn ngữ trang web----------------------*/
+.lang{
+	position: absolute;
+	top: 0;
+	right: 10px;
+	height: 40px;
+	line-height: 40px;
+}
+.lang a{
+	padding-left: 10px;
+	color: white;
+	text-decoration: none;
+}
+.lang a:hover{
+	color: red;
+}
+/*------------------------Article----------------------*/
+.container article{
+	min-height:600px;
+	width:75%;
+	background-color:white;
+	float:right;
+}
+/*------------------------Aside----------------------*/
+.container aside{
+	height: 600px;
+	width: 25%;
+	background-color: highlight;
+	float: left;
+}
+/*------------------------Footer----------------------*/
+.container footer{
+	line-height:50px;
+	background-color:orangered;
+	text-align:center;
+	font-variant:small-caps;
+	clear:both; 
+	color: white;
+	font-weight: bolder;
+}

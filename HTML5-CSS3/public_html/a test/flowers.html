@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body > * { background: silver; }
+            body {
+                display: grid;
+                display: grid;
+                width: 100%;
+                height: 600px;
+                grid-template-columns: 20% 80%;
+                grid-template-rows: 100px 50px 1fr 60px;
+                grid-gap: 5px;
+                grid-template-areas:
+                    "head head"
+                    "navi navi"
+                    "sec1 sec2"
+                    "foot foot";
+            }
+            header 	{ grid-area: head; }
+            nav 	{ grid-area: navi; background-color: #558D44;}
+            #s1 	{ grid-area: sec1; background-color: whitesmoke;}
+            #s2 	{ grid-area: sec2; background-color: white; }
+            footer 	{ 
+                grid-area: foot; 
+                background-color: #3B7A03; 
+                color: white;
+                font-size: 150%;
+                text-align: center;
+            }
+            header img {
+                width: 100%;
+                height: 100%;
+            }
+            nav ul li {
+                float: left;
+                list-style-type: none;
+                text-align: center;
+                width: 16%;
+                height: 30px;;
+                border-right: 3px solid darkgreen;
+                margin: 0px;
+            }
+            nav ul li:hover {
+                font-size: 110%;
+            }
+            nav ul li a {
+                color: white;
+                text-decoration-line: none;
+                 padding: 3px;
+            }
+            #s1 h3 {
+                background-color: greenyellow;
+            }
+            #s1 ul li {
+               padding: 5px;
+               border-bottom: 1px dotted black;
+            }
+            #s1 ul li a {
+                text-decoration: none;
+            }
+            #s2 div {
+                padding: 5px;
+                float: left;
+                width: 30%;
+                height: 300px;
+                border: 1px solid green;              
+            }
+            #s2 img {
+                width: 100%;
+                height: 250px;
+            }
+            #s2 div:hover {
+                background-color: greenyellow;
+            }
+            #s2 {
+                text-align: center;
+            }
+            #chitiet {
+                background: graytext;
+                padding: 2px;
+                border: 1px solid gray;
+                color: white;
+                text-decoration: none;
+            }
+            #dathang {
+                background: pink;
+                padding: 2px;
+                border: 1px solid gray;
+                color: white;
+                text-decoration: none;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <img src="images/banner1.jpg" alt=""/>
+        </header>
+    <nav>
+        <ul>
+            <li><a href="#">TRANG CHỦ</a></li>
+            <li><a href="#">GIỚI THIỆU</a></li>
+            <li><a href="#">TIN TỨC</a></li>
+            <li><a href="#">THANH TOÁN</a></li>
+            <li><a href="#">NHẬN XÉT</a></li>
+            <li><a href="lienhe.html">LIÊN HỆ</a></li>
+        </ul>
+    </nav>
+    <section id="s1">
+        <h3>HOA THEO THỂ LOẠI</h3>
+        <ul>
+            <li><a href="#">Hoa phong lan</a></li>
+            <li><a href="#">Hoa cắm bình</a></li>
+            <li><a href="#">Hoa văn phòng</a></li>
+            <li><a href="#">Hoa cưới</a></li>
+            <li><a href="#">Đặt hàng theo yêu cầu</a></li>
+        </ul>
+        <h3>QUÀ TẶNG</h3>
+        <ul>
+            <li><a href="#">Bánh kem</a></li>
+            <li><a href="#">Gấu bông</a></li>
+            <li><a href="#">Túi xách</a></li>
+            <li><a href="#">Bánh trung thu</a></li>
+            <li><a href="#">Cà vạt</a></li>
+            <li><a href="#">Socola</a></li>
+            <li><a href="#">Đặt hàng theo yêu cầu</a></li>
+        </ul>
+    </section>
+        <section id="s2">
+            <div>
+                <img src="images/H11.jpg" alt=""/>
+                <a href="#" id="chitiet">Chi tiết</a> <a href="#" id="dathang">Đặt hàng</a>
+            </div>
+            <div>
+                <img src="images/h12.jpg" alt=""/>
+                <a href="#" id="chitiet">Chi tiết</a> <a href="#" id="dathang">Đặt hàng</a>
+            </div>
+            <div>
+                <img src="images/h13.jpg" alt=""/>
+                <a href="#" id="chitiet">Chi tiết</a> <a href="#" id="dathang">Đặt hàng</a>
+            </div>
+            <div>
+                <img src="images/h21.jpg" alt=""/>
+                <a href="#" id="chitiet">Chi tiết</a> <a href="#" id="dathang">Đặt hàng</a>
+            </div>
+            <div>
+                <img src="images/h22.jpg" alt=""/>
+                <a href="#" id="chitiet">Chi tiết</a> <a href="#" id="dathang">Đặt hàng</a>
+            </div>
+            <div>
+                <img src="images/h23.jpg" alt=""/>
+                <a href="#" id="chitiet">Chi tiết</a> <a href="#" id="dathang">Đặt hàng</a>
+            </div>
+        </section>
+        <footer>CÔNG TY CỔ PHẦN ĐIỆN HOA NHA TRANG<br>
+            Địa chỉ: 51A Lý Tự Trọng - TP. Nha Trang - Tỉnh Khánh Hòa
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>iViettech - Trung tâm đào tạo Lập trình viên chuyên nghiệp</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                font-size: 100%;
+
+                background-color: white;
+                margin: 5px auto;
+                padding: 5px;
+            }
+
+            nav {
+                margin-bottom: 2em;
+                float: right;
+
+            }
+
+            #nav_menu ul {
+                list-style: none;
+                position: relative;
+
+
+
+            }
+            #nav_menu ul li {
+                float: left;
+                border-right:    1px solid darkred;
+                padding: 5px;
+                height: 50px;
+                margin-top:  13px;
+
+            }
+            #nav_menu ul ul {
+                display: none;         
+                position: absolute;
+                top: 100%;             
+            }
+            #nav_menu ul ul li {
+                float: none;           
+                position: relative;   
+                border-bottom:  1px solid darkred;
+                border-right: none;
+
+            }
+            #nav_menu ul ul li ul {
+                position: absolute;
+                left: 100%;             
+                top: -21%;                
+            }
+                      
+           
+            #nav_menu ul li:hover > ul {
+                display: block;        
+            }
+            #nav_menu > ul::after {
+                content: "";
+                display: block;
+                clear: both;
+            }
+
+
+            #nav_menu ul {
+                margin: 0;
+                padding: 0;
+            }
+            #nav_menu ul li a {
+                text-align: center;
+                display: block;
+                width: 176px;
+                padding: 1em 0;
+                text-decoration: none;
+                background-color: white;
+                color: black;
+                font-weight: normal;
+            }
+            
+            #nav_menu ul li a:hover, #nav_menu ul li a:focus {
+                background-color: white;
+                color: darkred;
+            }
+            header {
+                float: left;
+
+            }
+            #line {
+                border-bottom: 5px solid darkred;
+                margin-top: 70px
+            }
+            
+        </style>
+    </head>
+    <body>
+        
+            <header>
+                <img src="Images/ivtlogo.png" alt=""/>
+            </header>
+            <nav id="nav_menu">
+                <ul>
+                    <li><a href="#">Trang chủ</a></li>
+                    <li><a href="#">Các khóa học lập trình</a>
+                        <ul>
+                            <li><a href="#">Chuyên nghiệp</a>
+                                <ul>
+                                    <li><a href="#">Lập trình Java</a></li>
+                                    <li><a href="#">Lập trình iOS</a></li>
+                                    <li><a href="#">Kiểm thử chuyên nghiệp</a></li>
+                                    <li><a href="#">Lập trình PHP & mySQL</a></li>
+                                    <li><a href="#">Kiểm thử chuyên nghiệp</a></li>
+                                    <li><a href="#">Kiểm thử chuyên nghiệp</a></li>
+
+                                </ul>
+                            </li>
+                            <li><a href="#">Cấp tốc</a>
+                                <ul>
+                                    <li><a href="#">Lập trình Java cấp tốc</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Các khóa khác</a>
+                                <ul>
+                                    <li><a href="#">Lập trình cơ bản</a></li>
+                                    <li><a href="#">Thiết kế đồ họa</a></li>
+                                    <li><a href="#">Thiết kế web</a></li>
+                                    <li><a href="#">Kỹ sư cầu nối</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Đăng ký học</a></li>
+                    <li><a href="#">Việc làm</a></li>
+                    <li><a href="#">iVietTech</a></li>
+                    <li><a href="#">Trang vàng HV</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </nav>
+        <div id ="line"></div>
+    </body>
+</html>

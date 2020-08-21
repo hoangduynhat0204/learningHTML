@@ -1,0 +1,17 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 22, 2019, 6:57:23 PM
+    Author     : Hoang Duy Nhat
+*/
+
+body{background-color: yellow;}
+h1{ color: red;
+    font-size: 45px;
+}
+p{color: blue;}
+#format01 {color: #c82333;}
+.format02 {color: pink;}
